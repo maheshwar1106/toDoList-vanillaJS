@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDoList</title>
+    <link rel="stylesheet" href="./ToDoList.css">
+</head>
+<body>
+    <!-- Adding Item to the list -->
+     
+    <div id="outer">
+        <input id="input" type="text" required placeholder="Enter the input">
+        <select onclick="dropBox()"  name="select" id="dropBox">
+            <option >Status</option>
+            <option >Pending</option>
+            <option >Completed</option>
+
+        </select>
+        <button id="addButton"onclick="getInput()">Add Item</button>
+    </div>
+    
+    
+    <!-- Displaying Added Item -->
+    <div id="displayTable"></div>
+
+    <!-- Custom Alert Box -->
+    <div id="alert">
+        <div id="alert-inner">
+            <div>
+                <p>Error Message !</p>
+                <span id="alert-close">X</span>
+            </div>
+            <div>
+                <p>Invalid Input</p>
+            </div> 
+        </div>
+    </div>
+   
+
+    
+   
+    <script src="./ToDoList.js"></script>
+</body>
+</html>  
